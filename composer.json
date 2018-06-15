@@ -1,7 +1,8 @@
 {
     "name": "interglobalvision/payigv",
     "require": {
-        "stripe/stripe-php": "^4.1"
+        "stripe/stripe-php": "^4.1",
+        "dg/twitter-php": "^3.7"
     },
     "authors": [
         {
