@@ -22,7 +22,7 @@ try {
 
   echo [
     'id' => $charge['id'],
-    'created' = $charge['created'],
+    'created' => $charge['created'],
     'outcome' => $charge['outcome']['type'],
   ];
 } catch(\Stripe\Error\Card $e) {
