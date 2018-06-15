@@ -5,7 +5,6 @@ require_once('secret-keys.php');
 // Get the credit card details submitted by the form
 $queries = array();
 parse_str($_SERVER['QUERY_STRING'], $queries);
-echo $queries['source'];
 
 // Set your secret key: remember to change this to your live secret key in production
 // See your keys here: https://dashboard.stripe.com/account/apikeys
