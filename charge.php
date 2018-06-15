@@ -20,6 +20,7 @@ try {
     "receipt_email" => $queries['email'],
   ));
 
+  // https://stripe.com/docs/api/php#charge_object
   $response = array(
     'id' => $charge['id'],
     'created' => $charge['created'],
