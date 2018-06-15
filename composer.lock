@@ -4,21 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2b3fa2c878567f59e284cee07fce6ce5",
     "content-hash": "a187f6f958be8de8ef7e0316e62d25df",
     "packages": [
         {
             "name": "stripe/stripe-php",
-            "version": "v4.1.1",
+            "version": "v4.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "a3c940bd90f0ca1bad07c93ff31900ca4b99af64"
+                "reference": "834681b9cdfa68d88a27e36ec9e356b598a5f0e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/a3c940bd90f0ca1bad07c93ff31900ca4b99af64",
-                "reference": "a3c940bd90f0ca1bad07c93ff31900ca4b99af64",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/834681b9cdfa68d88a27e36ec9e356b598a5f0e6",
+                "reference": "834681b9cdfa68d88a27e36ec9e356b598a5f0e6",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +59,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2016-10-21 18:25:10"
+            "time": "2017-06-20T01:39:06+00:00"
         }
     ],
     "packages-dev": [],
