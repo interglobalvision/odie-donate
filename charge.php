@@ -5,6 +5,7 @@ require_once('secret-keys.php');
 // Get the credit card details submitted by the form
 $queries = array();
 parse_str($_SERVER['QUERY_STRING'], $queries);
+echo $queries['source'];
 
 // Set your secret key: remember to change this to your live secret key in production
 // See your keys here: https://dashboard.stripe.com/account/apikeys
@@ -16,8 +17,8 @@ try {
     "amount" => $queries['amount'] * 100, // Amount in cents
     "currency" => 'usd',
     "source" => $queries['token'],
-    "description" => $queries['description'],
-    "receipt_email" => $queries['email'],
+    //"description" => $queries['description'],
+    //"receipt_email" => $queries['email'],
   ));
 
   echo $charge['outcome']['type'];
@@ -47,5 +48,5 @@ try {
 } catch (Exception $e) {
   // Something else happened, completely unrelated to Stripe
   echo 'Exception: An unknown error occurred.';
-}
+}*/
 ?>
