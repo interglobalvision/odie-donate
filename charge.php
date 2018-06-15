@@ -16,8 +16,8 @@ try {
     "amount" => $queries['amount'] * 100, // Amount in cents
     "currency" => 'usd',
     "source" => $queries['token'],
-    //"description" => $queries['description'],
-    //"receipt_email" => $queries['email'],
+    "description" => $queries['description'],
+    "receipt_email" => $queries['email'],
   ));
 
   echo $charge['outcome']['type'];
