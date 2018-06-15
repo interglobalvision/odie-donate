@@ -48,5 +48,5 @@ try {
 } catch (Exception $e) {
   // Something else happened, completely unrelated to Stripe
   echo 'Exception: An unknown error occurred.';
-}*/
+}
 ?>
