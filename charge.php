@@ -20,7 +20,11 @@ try {
     "receipt_email" => $queries['email'],
   ));
 
-  echo $charge['outcome'];
+  echo [
+    'id' => $charge['id'],
+    'created' = $charge['created'],
+    'outcome' => $charge['outcome']['type'],
+  ];
 } catch(\Stripe\Error\Card $e) {
   // Since it's a decline, \Stripe\Error\Card will be caught
   $body = $e->getJsonBody();
